@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal:#082557;
+    --cor-secundaria:#6fd3d3;
+    --cor-terciaria:#14453c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: var(--cor-principal);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 55vw;
+    height: 510px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+
+    transition: width .3s ,height .3s;
+
+}
+
+#img-login {
+    display: block;
+    background: var(--cor-principal) url(../images/Bg\ Login.jpg) no-repeat right top;
+    height: 200px;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+#caixa-form{
+    display: block;
+    padding: 10px;
+}
+
+#caixa-form h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#caixa-form p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+#caixa-form .form{
+    display: block;
+    width: 50vw;
+    margin: 10px;
+}
+
+#caixa-form .form input{
+    position: relative;
+    background-color: var(--cor-secundaria);
+    height: 30px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+#caixa-form .form input:focus{
+    background-color: white;
+}
+
+#caixa-form input[type=submit]{
+    display: block;
+    font-size: 1em;
+    background-color: #117171;
+    color: white;
+    width:100%;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#caixa-form input[type=submit]:hover{
+    background-color: #042a2a;
+
+    transition: ease .3s;
+}
+
+#caixa-form .botao{
+    display: block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 7px;
+    margin-top: 5px;
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.555);
+    cursor: pointer;
+
+}
+
+#caixa-form .botao:hover{
+    background-color: #3fa4a4;
+    color: white;
+}
+
+#caixa-form  span#mail {
+    font-size: 0.9em;
+}
